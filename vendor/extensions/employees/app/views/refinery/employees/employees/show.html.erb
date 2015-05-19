@@ -25,9 +25,11 @@
   </section>
   <section>
     <h1>Skills</h1>
-    <p>
-      <%=raw @employee.skills.name %>
-    </p>
+    <ul>
+    <% @employee.skills.each do |s| %>
+      <li><%= s.name %></li>
+    <% end %>
+    </ul>
   </section>
   <section>
     <h1>Bio</h1>

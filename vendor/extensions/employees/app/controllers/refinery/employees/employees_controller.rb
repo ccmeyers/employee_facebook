@@ -29,10 +29,6 @@ module Refinery
         @departments = Refinery::Employees::Department.all
       end
 
-      def find_all_skills
-        @skills = Refinery::Employees::Department.all
-      end
-
       def find_page
         @page = ::Refinery::Page.where(:link_url => "/employees").first
       end
