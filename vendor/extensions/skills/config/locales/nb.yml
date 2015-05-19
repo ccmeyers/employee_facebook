@@ -1,0 +1,27 @@
+nb:
+  refinery:
+    plugins:
+      skills:
+        title: Skills
+    skills:
+      admin:
+        skills:
+          actions:
+            create_new: Lag en ny Skill
+            reorder: Endre rekkefølgen på Skills
+            reorder_done: Ferdig å endre rekkefølgen Skills
+          records:
+            title: Skills
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Skills enda. Klikk på "Lag en ny Skill" for å legge til din første skill.
+          skill:
+            view_live_html: Vis hvordan denne skill ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne skill
+            delete: Fjern denne skill permanent
+      skills:
+        show:
+          other: Andre Skills
+  activerecord:
+    attributes:
+      'refinery/skills/skill':
+        name: Name

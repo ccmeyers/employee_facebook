@@ -1,0 +1,52 @@
+<%= form_for [refinery, :employees_admin, @employee] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @employee,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :name -%>
+    <%= f.text_field :name, :class => 'larger widest' -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :photo -%>
+    <%= render '/refinery/admin/image_picker',
+               :f => f,
+               :field => :photo_id,
+               :image => @employee.photo,
+               :toggle_image_display => false -%>
+  </div>
+
+  <div class="field">
+    <%= f.label :department -%>
+    <%= f.select(:department_id, @departments.collect {|d| [d.name, d.id] })%>
+  </div>
+
+  <div class="field">
+    <%= f.label :skills -%>
+    <% @skills.each do |skill| %>
+      <%= check_box_tag :skill_ids, skill.id, @employee.skills.include?(skill), :name => 'employee[skill_ids][]' %>
+      <%= label_tag :skill_ids, skill.name %>
+    <% end %>
+  </div>
+
+  <div class='field'>
+    <%= render '/refinery/admin/wysiwyg',
+                :f => f,
+                :fields => [:bio],
+                :object => "employees/employee" -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.employees.admin.employees.employee'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete', :title => @employee.name) -%>
+<% end -%>
+
+<% content_for :javascripts do -%>
+  <script>
+    $(document).ready(function(){
+      page_options.init(false, '', '');
+    });
+  </script>
+<% end -%>

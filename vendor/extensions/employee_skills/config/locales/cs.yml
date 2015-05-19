@@ -1,0 +1,28 @@
+cs:
+  refinery:
+    plugins:
+      employee_skills:
+        title: Employee Skills
+    employee_skills:
+      admin:
+        employee_skills:
+          actions:
+            create_new: Přidat Employee Skill
+            reorder: Řadit Employee Skills
+            reorder_done: Konec řazení Employee Skills
+          records:
+            title: Employee Skills
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Employee Skills. Zvolte "Přidat Employee Skill" pro přidání prvního employee skill.
+          employee_skill:
+            view_live_html: Zobrazit náhled employee skill<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit employee skill
+            delete: Smazat employee skill
+      employee_skills:
+        show:
+          other: Další Employee Skills
+  activerecord:
+    attributes:
+      'refinery/employee_skills/employee_skill':
+        employee_id: Employee
+        skill_id: Skill

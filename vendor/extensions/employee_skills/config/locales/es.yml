@@ -1,0 +1,29 @@
+es:
+  refinery:
+    plugins:
+      employee_skills:
+        title: Employee Skills
+#        article: masculino/femenino
+    employee_skills:
+      admin:
+        employee_skills:
+          actions:
+            create_new: Crear nuevo employee skill
+            reorder: Reordenar employee skills
+            reorder_done: Reordenación de employee skills completada
+          records:
+            title: Employee Skills
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay employee skills todavía. Pulsa en "Crear nuevo Employee Skill" para crear tu primer employee skill.
+          employee_skill:
+            view_live_html: Ver este employee skill como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este employee skill
+            delete: Borrar este employee skill para siempre
+      employee_skills:
+        show:
+          other: Otros employee skills
+  activerecord:
+    attributes:
+      'refinery/employee_skills/employee_skill':
+        employee_id: Employee
+        skill_id: Skill

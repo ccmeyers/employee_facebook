@@ -1,0 +1,28 @@
+es:
+  refinery:
+    plugins:
+      skills:
+        title: Skills
+#        article: masculino/femenino
+    skills:
+      admin:
+        skills:
+          actions:
+            create_new: Crear nuevo skill
+            reorder: Reordenar skills
+            reorder_done: Reordenación de skills completada
+          records:
+            title: Skills
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay skills todavía. Pulsa en "Crear nuevo Skill" para crear tu primer skill.
+          skill:
+            view_live_html: Ver este skill como abierto al público <br/><em>(abre en ventana nueva)</em>
+            edit: Editar este skill
+            delete: Borrar este skill para siempre
+      skills:
+        show:
+          other: Otros skills
+  activerecord:
+    attributes:
+      'refinery/skills/skill':
+        name: Name

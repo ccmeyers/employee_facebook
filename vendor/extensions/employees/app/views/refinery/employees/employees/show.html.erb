@@ -1,0 +1,65 @@
+<% content_for :body_content_title do %>
+  <%= @employee.name %>
+<% end %>
+
+<% content_for :body do %>
+  <section class="top">
+    <div class="left">    
+      <h1>Name</h1>
+      <p>
+        <%=raw @employee.name %>
+      </p>
+    </div>
+    <div class="right">    
+      <h1>Photo</h1>
+      <p>
+        <%= image_fu @employee.photo, "100x100" %>
+      </p>
+    </div>
+  </section>
+  <section>
+    <h1>Department</h1>
+    <p>
+      <%=raw @employee.department.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Skills</h1>
+    <p>
+      <%=raw @employee.skills.name %>
+    </p>
+  </section>
+  <section>
+    <h1>Bio</h1>
+    <p>
+      <%=raw @employee.bio %>
+    </p>
+  </section>
+<% end %>
+
+<% content_for :side_body do %>
+  <aside>
+    <h2><%= t('.other') %></h2>
+    <ul id="employees">
+      <% @employees.each do |employee| %>
+        <li>
+          <%= link_to employee.name, refinery.employees_employee_path(employee) %>
+        </li>
+      <% end %>
+    </ul>
+    <ul id="departments">
+      <% @departments.each do |d| %>
+        <li>
+          <%= d.name %>
+          <ul>          
+            <% d.employees.each do |e| %>
+              <li><%= link_to e.name, refinery.employees_employee_path(e) %></li>
+            <% end %>
+          </ul>
+        </li>
+      <% end %>
+    </ul>
+  </aside>
+<% end %>
+
+<%= render '/refinery/content_page' %>

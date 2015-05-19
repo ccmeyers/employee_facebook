@@ -1,0 +1,20 @@
+<%= form_for [refinery, :employee_skills_admin, @employee_skill] do |f| -%>
+  <%= render '/refinery/admin/error_messages',
+              :object => @employee_skill,
+              :include_object_name => true %>
+
+  <div class='field'>
+    <%= f.label :employee_id -%>
+    <%= f.number_field :employee_id -%>
+  </div>
+
+  <div class='field'>
+    <%= f.label :skill_id -%>
+    <%= f.number_field :skill_id -%>
+  </div>
+
+  <%= render '/refinery/admin/form_actions', :f => f,
+             :continue_editing => false,
+             :delete_title => t('delete', :scope => 'refinery.employee_skills.admin.employee_skills.employee_skill'),
+             :delete_confirmation => t('message', :scope => 'refinery.admin.delete') -%>
+<% end -%>

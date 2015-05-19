@@ -1,0 +1,52 @@
+fr:
+  refinery:
+    plugins:
+      departments:
+        title: Departments
+      employees:
+        title: Employees
+    employees:
+      admin:
+        departments:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Department
+            reorder: Réordonner les Departments
+            reorder_done: Fin de réordonnancement des Departments
+          records:
+            title: Departments
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Department. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Department" pour créer votre premi(er/ère) department.
+          department:
+            view_live_html: Voir ce(t/tte) department <br/><em>(Ouvre une nouvelle
+              fenêtre)</em>
+            edit: Modifier ce(t/tte) department
+            delete: Supprimer définitivement ce(t/tte) department
+        employees:
+          actions:
+            create_new: Créer un(e) nouve(au/l/lle) Employee
+            reorder: Réordonner les Employees
+            reorder_done: Fin de réordonnancement des Employees
+          records:
+            title: Employees
+            sorry_no_results: Désolé ! Aucun résultat.
+            no_items_yet: Il n'y a actuellement aucun(e) Employee. Cliquer sur "Créer
+              un(e) nouve(au/l/lle) Employee" pour créer votre premi(er/ère) employee.
+          employee:
+            view_live_html: Voir ce(t/tte) employee <br/><em>(Ouvre une nouvelle fenêtre)</em>
+            edit: Modifier ce(t/tte) employee
+            delete: Supprimer définitivement ce(t/tte) employee
+      departments:
+        show:
+          other: Autres Departments
+      employees:
+        show:
+          other: Autres Employees
+  activerecord:
+    attributes:
+      refinery/employees/department:
+        name: Name
+      refinery/employees/employee:
+        name: Name
+        photo: Photo
+        bio: Bio

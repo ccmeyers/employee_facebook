@@ -1,0 +1,52 @@
+cs:
+  refinery:
+    plugins:
+      departments:
+        title: Departments
+      employees:
+        title: Employees
+    employees:
+      admin:
+        departments:
+          actions:
+            create_new: Přidat Department
+            reorder: "Řadit Departments"
+            reorder_done: Konec řazení Departments
+          records:
+            title: Departments
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Departments. Zvolte "Přidat
+              Department" pro přidání prvního department.
+          department:
+            view_live_html: Zobrazit náhled department<br/><em>(otevře se v novém
+              okně)</em>
+            edit: Upravit department
+            delete: Smazat department
+        employees:
+          actions:
+            create_new: Přidat Employee
+            reorder: "Řadit Employees"
+            reorder_done: Konec řazení Employees
+          records:
+            title: Employees
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Employees. Zvolte "Přidat Employee"
+              pro přidání prvního employee.
+          employee:
+            view_live_html: Zobrazit náhled employee<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit employee
+            delete: Smazat employee
+      departments:
+        show:
+          other: Další Departments
+      employees:
+        show:
+          other: Další Employees
+  activerecord:
+    attributes:
+      refinery/employees/department:
+        name: Name
+      refinery/employees/employee:
+        name: Name
+        photo: Photo
+        bio: Bio

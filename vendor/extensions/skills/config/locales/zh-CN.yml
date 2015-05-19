@@ -1,0 +1,29 @@
+zh-CN:
+  refinery:
+    plugins:
+      skills:
+        title: Skills
+    skills:
+      admin:
+        skills:
+          actions:
+            create_new: 建立新的 Skill
+            reorder: 对 Skills 重新排序
+            reorder_done: 对 Skills 的重新排序结束
+          records:
+            title: Skills
+            sorry_no_results: 对不起，未找到结果。 #Sorry! There are no results found.
+
+            # There are no Skills yet. Click "Add New Skill" to add your first skill.
+            no_items_yet: 目前没有 Skills . 点击 "Add New Skill" 创建一个skill.
+          skill:
+            view_live_html: 查看 skill 的最新内容.<br/><em>(新窗口中打开)</em>
+            edit: 编辑 skill
+            delete: 永久删除 skill
+      skills:
+        show:
+          other: 其他 Skills
+  activerecord:
+    attributes:
+      'refinery/skills/skill':
+        name: Name

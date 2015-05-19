@@ -1,0 +1,28 @@
+nb:
+  refinery:
+    plugins:
+      employee_skills:
+        title: Employee Skills
+    employee_skills:
+      admin:
+        employee_skills:
+          actions:
+            create_new: Lag en ny Employee Skill
+            reorder: Endre rekkefølgen på Employee Skills
+            reorder_done: Ferdig å endre rekkefølgen Employee Skills
+          records:
+            title: Employee Skills
+            sorry_no_results: Beklager! Vi fant ikke noen resultater.
+            no_items_yet: Det er ingen Employee Skills enda. Klikk på "Lag en ny Employee Skill" for å legge til din første employee skill.
+          employee_skill:
+            view_live_html: Vis hvordan denne employee skill ser ut offentlig <br/><em>(åpner i et nytt vindu)</em>
+            edit: Rediger denne employee skill
+            delete: Fjern denne employee skill permanent
+      employee_skills:
+        show:
+          other: Andre Employee Skills
+  activerecord:
+    attributes:
+      'refinery/employee_skills/employee_skill':
+        employee_id: Employee
+        skill_id: Skill

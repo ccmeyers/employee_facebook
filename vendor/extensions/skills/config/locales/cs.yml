@@ -1,0 +1,27 @@
+cs:
+  refinery:
+    plugins:
+      skills:
+        title: Skills
+    skills:
+      admin:
+        skills:
+          actions:
+            create_new: Přidat Skill
+            reorder: Řadit Skills
+            reorder_done: Konec řazení Skills
+          records:
+            title: Skills
+            sorry_no_results: Litujeme, ale nebyly nalezny žádné výsledky.
+            no_items_yet: Zatím nebyly vytvořeny žádné Skills. Zvolte "Přidat Skill" pro přidání prvního skill.
+          skill:
+            view_live_html: Zobrazit náhled skill<br/><em>(otevře se v novém okně)</em>
+            edit: Upravit skill
+            delete: Smazat skill
+      skills:
+        show:
+          other: Další Skills
+  activerecord:
+    attributes:
+      'refinery/skills/skill':
+        name: Name

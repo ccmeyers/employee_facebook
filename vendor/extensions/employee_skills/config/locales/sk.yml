@@ -1,0 +1,28 @@
+sk:
+  refinery:
+    plugins:
+      employee_skills:
+        title: Employee Skills
+    employee_skills:
+      admin:
+        employee_skills:
+          actions:
+            create_new: Pridať Employee Skill
+            reorder: Preusporiadať Employee Skills
+            reorder_done: Koniec radenia Employee Skills
+          records:
+            title: Employee Skills
+            sorry_no_results: Ľutujeme, ale neboli nájdené žiadne výsledky.
+            no_items_yet: Nie sú vytvorené žiadne Employee Skills. Kliknite na "Pridať Employee Skill" pre pridanie prvého employee skill.
+          employee_skill:
+            view_live_html: Zobraziť náhľad employee skill<br/><em>(otvorí sa v novom okne)</em>
+            edit: Upraviť employee skill
+            delete: Zmazať employee skill
+      employee_skills:
+        show:
+          other: Daľšie Employee Skills
+  activerecord:
+    attributes:
+      'refinery/employee_skills/employee_skill':
+        employee_id: Employee
+        skill_id: Skill

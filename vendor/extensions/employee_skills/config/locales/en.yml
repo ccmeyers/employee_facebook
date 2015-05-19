@@ -1,0 +1,28 @@
+en:
+  refinery:
+    plugins:
+      employee_skills:
+        title: Employee Skills
+    employee_skills:
+      admin:
+        employee_skills:
+          actions:
+            create_new: Add New Employee Skill
+            reorder: Reorder Employee Skills
+            reorder_done: Done Reordering Employee Skills
+          records:
+            title: Employee Skills
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Employee Skills yet. Click "Add New Employee Skill" to add your first employee skill.
+          employee_skill:
+            view_live_html: View this employee skill live <br/><em>(opens in a new window)</em>
+            edit: Edit this employee skill
+            delete: Remove this employee skill forever
+      employee_skills:
+        show:
+          other: Other Employee Skills
+  activerecord:
+    attributes:
+      'refinery/employee_skills/employee_skill':
+        employee_id: Employee
+        skill_id: Skill

@@ -1,0 +1,27 @@
+tr:
+  refinery:
+    plugins:
+      skills:
+        title: Skills
+    skills:
+      admin:
+        skills:
+          actions:
+            create_new: Yeni Ekle Skill
+            reorder: Tekrar sirala Skills
+            reorder_done: Tekrar siralama tamamlandiSkills
+          records:
+            title: Skills
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Skills yok henuz.  Tikla "Yeni Ekle Skill" eklemek senin ilk skill.
+          skill:
+            view_live_html: Bunu canlu skill goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle skill
+            delete: Bunu Sil skill sonsuza dek
+      skills:
+        show:
+          other: Diger Skills
+  activerecord:
+    attributes:
+      'refinery/skills/skill':
+        name: Name

@@ -1,0 +1,27 @@
+en:
+  refinery:
+    plugins:
+      skills:
+        title: Skills
+    skills:
+      admin:
+        skills:
+          actions:
+            create_new: Add New Skill
+            reorder: Reorder Skills
+            reorder_done: Done Reordering Skills
+          records:
+            title: Skills
+            sorry_no_results: Sorry! There are no results found.
+            no_items_yet: There are no Skills yet. Click "Add New Skill" to add your first skill.
+          skill:
+            view_live_html: View this skill live <br/><em>(opens in a new window)</em>
+            edit: Edit this skill
+            delete: Remove this skill forever
+      skills:
+        show:
+          other: Other Skills
+  activerecord:
+    attributes:
+      'refinery/skills/skill':
+        name: Name

@@ -1,0 +1,53 @@
+es:
+  refinery:
+    plugins:
+      departments:
+        title: Departments
+      employees:
+        title: Employees
+    employees:
+      admin:
+        departments:
+          actions:
+            create_new: Crear nuevo department
+            reorder: Reordenar departments
+            reorder_done: Reordenación de departments completada
+          records:
+            title: Departments
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay departments todavía. Pulsa en "Crear nuevo Department"
+              para crear tu primer department.
+          department:
+            view_live_html: Ver este department como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este department
+            delete: Borrar este department para siempre
+        employees:
+          actions:
+            create_new: Crear nuevo employee
+            reorder: Reordenar employees
+            reorder_done: Reordenación de employees completada
+          records:
+            title: Employees
+            sorry_no_results: Lo siento, no hay resultados
+            no_items_yet: No hay employees todavía. Pulsa en "Crear nuevo Employee"
+              para crear tu primer employee.
+          employee:
+            view_live_html: Ver este employee como abierto al público <br/><em>(abre
+              en ventana nueva)</em>
+            edit: Editar este employee
+            delete: Borrar este employee para siempre
+      departments:
+        show:
+          other: Otros departments
+      employees:
+        show:
+          other: Otros employees
+  activerecord:
+    attributes:
+      refinery/employees/department:
+        name: Name
+      refinery/employees/employee:
+        name: Name
+        photo: Photo
+        bio: Bio

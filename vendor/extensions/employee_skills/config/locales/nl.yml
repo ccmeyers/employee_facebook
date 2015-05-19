@@ -1,0 +1,28 @@
+nl:
+  refinery:
+    plugins:
+      employee_skills:
+        title: Employee Skills
+    employee_skills:
+      admin:
+        employee_skills:
+          actions:
+            create_new: Nieuwe Employee Skill toevoegen
+            reorder: De volgorde van de Employee Skills wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Employee Skill-volgorde
+          records:
+            title: Employee Skills
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Employee Skills. Druk op 'Nieuwe Employee Skill toevoegen' om de eerste toe te voegen.
+          employee_skill:
+            view_live_html: Deze employee skill op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze employee skill
+            delete: Deze employee skill definitief verwijderen
+      employee_skills:
+        show:
+          other: Andere Employee Skills
+  activerecord:
+    attributes:
+      'refinery/employee_skills/employee_skill':
+        employee_id: Employee
+        skill_id: Skill

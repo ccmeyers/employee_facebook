@@ -1,0 +1,28 @@
+tr:
+  refinery:
+    plugins:
+      employee_skills:
+        title: Employee Skills
+    employee_skills:
+      admin:
+        employee_skills:
+          actions:
+            create_new: Yeni Ekle Employee Skill
+            reorder: Tekrar sirala Employee Skills
+            reorder_done: Tekrar siralama tamamlandiEmployee Skills
+          records:
+            title: Employee Skills
+            sorry_no_results: Uzgunum! Herhangi bir sonuc bulunamadi.
+            no_items_yet: Herhangi bir Employee Skills yok henuz.  Tikla "Yeni Ekle Employee Skill" eklemek senin ilk employee skill.
+          employee_skill:
+            view_live_html: Bunu canlu employee skill goruntule <br/><em>(yeni bir pencerede acar)</em>
+            edit: Bunu Duzenle employee skill
+            delete: Bunu Sil employee skill sonsuza dek
+      employee_skills:
+        show:
+          other: Diger Employee Skills
+  activerecord:
+    attributes:
+      'refinery/employee_skills/employee_skill':
+        employee_id: Employee
+        skill_id: Skill

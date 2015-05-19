@@ -1,0 +1,49 @@
+zh-CN:
+  refinery:
+    plugins:
+      departments:
+        title: Departments
+      employees:
+        title: Employees
+    employees:
+      admin:
+        departments:
+          actions:
+            create_new: "建立新的 Department"
+            reorder: "对 Departments 重新排序"
+            reorder_done: "对 Departments 的重新排序结束"
+          records:
+            title: Departments
+            sorry_no_results: "对不起，未找到结果。"
+            no_items_yet: 目前没有 Departments . 点击 "Add New Department" 创建一个department.
+          department:
+            view_live_html: "查看 department 的最新内容.<br/><em>(新窗口中打开)</em>"
+            edit: "编辑 department"
+            delete: "永久删除 department"
+        employees:
+          actions:
+            create_new: "建立新的 Employee"
+            reorder: "对 Employees 重新排序"
+            reorder_done: "对 Employees 的重新排序结束"
+          records:
+            title: Employees
+            sorry_no_results: "对不起，未找到结果。"
+            no_items_yet: 目前没有 Employees . 点击 "Add New Employee" 创建一个employee.
+          employee:
+            view_live_html: "查看 employee 的最新内容.<br/><em>(新窗口中打开)</em>"
+            edit: "编辑 employee"
+            delete: "永久删除 employee"
+      departments:
+        show:
+          other: "其他 Departments"
+      employees:
+        show:
+          other: "其他 Employees"
+  activerecord:
+    attributes:
+      refinery/employees/department:
+        name: Name
+      refinery/employees/employee:
+        name: Name
+        photo: Photo
+        bio: Bio

@@ -1,0 +1,27 @@
+nl:
+  refinery:
+    plugins:
+      skills:
+        title: Skills
+    skills:
+      admin:
+        skills:
+          actions:
+            create_new: Nieuwe Skill toevoegen
+            reorder: De volgorde van de Skills wijzigen
+            reorder_done: Klaar met het wijzingen van de van de Skill-volgorde
+          records:
+            title: Skills
+            sorry_no_results: Helaas! Er zijn geen resultaten gevonden.
+            no_items_yet: Er zijn nog geen Skills. Druk op 'Nieuwe Skill toevoegen' om de eerste toe te voegen.
+          skill:
+            view_live_html: Deze skill op de website bekijken <br/><em>(opent in een nieuw venster)</em>
+            edit: Bewerk deze skill
+            delete: Deze skill definitief verwijderen
+      skills:
+        show:
+          other: Andere Skills
+  activerecord:
+    attributes:
+      'refinery/skills/skill':
+        name: Name
